@@ -100,6 +100,21 @@ body::after {
     padding: 0 2rem;
 }
 
+#mainContent,
+main,
+.dashboard-grid {
+    position: relative;
+    z-index: 5;
+    pointer-events: auto;
+}
+
+.tile,
+.tile *,
+.btn,
+button {
+    pointer-events: auto;
+}
+
 /* Login Screen */
 .login-screen {
     position: fixed;
