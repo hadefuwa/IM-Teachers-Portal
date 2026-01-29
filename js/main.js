@@ -274,15 +274,16 @@ if (modalContentEl) {
 
 let lastModalOpenTs = 0;
 
-// Global click handler for tiles (more reliable than buttons)
+// Global click handler for tiles (resources, downloads, external links)
 document.addEventListener('click', function(event) {
-    const tile = event.target.closest('.tile[data-resource], .tile[data-download]');
+    const tile = event.target.closest('.tile[data-resource], .tile[data-download], .tile[data-link]');
     console.log('[CLICK]', {
         target: event.target.tagName,
         class: event.target.className,
         hasTile: !!tile,
         resource: tile?.dataset?.resource,
         download: tile?.dataset?.download,
+        link: tile?.dataset?.link,
         x: event.clientX,
         y: event.clientY
     });
@@ -297,6 +298,9 @@ document.addEventListener('click', function(event) {
     } else if (tile.dataset.download) {
         console.log('[DOWNLOAD_TIA]');
         downloadTiaPortal();
+    } else if (tile.dataset.link) {
+        console.log('[OPEN_LINK]', tile.dataset.link);
+        window.open(tile.dataset.link, '_blank', 'noopener');
     }
 });
 
