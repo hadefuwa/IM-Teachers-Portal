@@ -181,19 +181,26 @@ const resources = {
     'im0004-sow': {
         title: 'IM0004 – Scheme of Work',
         content: `
-            <h2>IM0004 Scheme of Work</h2>
+            <h2>IM0004 Scheme of Work (from Teacher Notes)</h2>
             <p><strong>A scheme of work is a structured plan that breaks a subject into sequenced lessons over a set period.</strong> It outlines what is taught, in what order, and roughly how long each part takes. It includes learning objectives, topics, key activities, resources, and assessment points.</p>
-            <h3>Suggested 8‑Week Structure (CP0539 / CP6773)</h3>
-            <ul>
-                <li><strong>Weeks 1–2:</strong> Closed‑loop concepts, sensors, system overview</li>
-                <li><strong>Weeks 3–4:</strong> Flow control, PID behaviour, instrumentation</li>
-                <li><strong>Weeks 5–6:</strong> Fault simulation, troubleshooting, diagnostics</li>
-                <li><strong>Weeks 7–8:</strong> Commissioning, reporting, assessment</li>
-            </ul>
+            <h3>Suggested Delivery & Pacing (10 Weeks)</h3>
+            <p>From IM0004 Teacher Notes: learners begin with guided exploration then move into discovery, fault‑finding, and scenario‑based diagnostics.</p>
+            <ol>
+                <li><strong>Week 1:</strong> Intro + Worksheets 1–2 — Closed‑loop flow, E‑Stop — <em>Guided</em></li>
+                <li><strong>Week 2:</strong> Worksheets 3–5 — Status LEDs, PLC I/O, HMI — <em>Discovery</em></li>
+                <li><strong>Week 3:</strong> Worksheets 6–7 — Pump & valve behaviour — <em>Guided → fault‑led</em></li>
+                <li><strong>Week 4:</strong> Worksheets 8–9 — Float & proximity sensors — <em>Fault‑led</em></li>
+                <li><strong>Week 5:</strong> Worksheets 10–11 — Flow & temperature sensors — <em>Discovery</em></li>
+                <li><strong>Week 6:</strong> Worksheets 12–13 — Digital vs analogue sensors — <em>Guided</em></li>
+                <li><strong>Week 7:</strong> Random Faults — Fault‑finding via IO screen — <em>Fault‑led</em></li>
+                <li><strong>Week 8:</strong> Scenarios 1–4 — Realistic simulation — <em>Scenario‑based</em></li>
+                <li><strong>Week 9:</strong> Scenarios 5–8 — Realistic simulation — <em>Scenario‑based</em></li>
+                <li><strong>Week 10:</strong> Review & Assessments — Practical + written — <em>Mixed</em></li>
+            </ol>
             <h3>Assessments</h3>
             <ul>
-                <li>Formative: practical tasks + reflection logs</li>
-                <li>Summative: fault‑finding assessment</li>
+                <li>Formative: worksheets + observation</li>
+                <li>Summative: practical & written review</li>
             </ul>
         `
     },
@@ -262,17 +269,22 @@ const resources = {
     'im3214-sow': {
         title: 'IM3214 – Scheme of Work',
         content: `
-            <h2>IM3214 Scheme of Work</h2>
+            <h2>IM3214 Scheme of Work (from Instructor Guide)</h2>
             <p><strong>A scheme of work is a structured plan that breaks a subject into sequenced lessons over a set period.</strong> It outlines what is taught, in what order, and roughly how long each part takes. It includes learning objectives, topics, key activities, resources, and assessment points.</p>
-            <h3>Suggested 6‑Week Structure (CP6211)</h3>
-            <ul>
-                <li><strong>Weeks 1–2:</strong> LOGO! PLC basics, I/O, wiring and safety</li>
-                <li><strong>Weeks 3–4:</strong> Logic control, timers, counters, outputs</li>
-                <li><strong>Weeks 5–6:</strong> Fault finding, optimisation, mini‑project</li>
-            </ul>
+            <h3>Worksheet‑Based Pacing (CP6211)</h3>
+            <p>Each worksheet is designed for approximately <strong>40–60 minutes</strong> delivery time.</p>
+            <ol>
+                <li><strong>Worksheet 1:</strong> Basic Outputs — switching motor/transistor outputs</li>
+                <li><strong>Worksheet 2:</strong> Sequenced Outputs — finite‑state machine, traffic light control</li>
+                <li><strong>Worksheet 3:</strong> PWM Outputs — timers, PWM, analogue voltage via capacitor, FETs</li>
+                <li><strong>Worksheet 4:</strong> Basic Inputs — polling switches, variables, input states</li>
+                <li><strong>Worksheet 5:</strong> Pedestrian Crossing — combined inputs/outputs, state machines</li>
+                <li><strong>Worksheet 6:</strong> Potentiometers — analogue controls, go/no‑go thresholds</li>
+                <li><strong>Worksheet 7:</strong> Using Sensors — thermistor characteristics & data conversion</li>
+            </ol>
             <h3>Assessments</h3>
             <ul>
-                <li>Formative: worksheets + practical checks</li>
+                <li>Formative: worksheet completion & practical demonstrations</li>
                 <li>Summative: working LOGO! control sequence</li>
             </ul>
         `
