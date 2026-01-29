@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Factory Teachers Portal</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🏭 Smart Factory Teachers Portal</h1>
+            <p class="subtitle">Your comprehensive resource hub for Smart Factory curriculum delivery</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="dashboard-grid">
+            <!-- Specification Document -->
+            <div class="tile tile-primary" data-tile="specification">
+                <div class="tile-icon">📋</div>
+                <h2>Specification Document</h2>
+                <p>Complete technical specifications and learning outcomes for the Smart Factory system</p>
+                <button class="btn btn-primary" onclick="openResource('specification')">View Document</button>
+            </div>
+
+            <!-- Curriculum -->
+            <div class="tile tile-success" data-tile="curriculum">
+                <div class="tile-icon">📚</div>
+                <h2>Curriculum</h2>
+                <p>Structured lesson plans, learning objectives, and assessment criteria</p>
+                <button class="btn btn-success" onclick="openResource('curriculum')">Explore Curriculum</button>
+            </div>
+
+            <!-- Teachers Guide -->
+            <div class="tile tile-info" data-tile="teachers-guide">
+                <div class="tile-icon">👨‍🏫</div>
+                <h2>Teachers Guide</h2>
+                <p>Step-by-step teaching instructions, tips, and best practices</p>
+                <button class="btn btn-info" onclick="openResource('teachers-guide')">Open Guide</button>
+            </div>
+
+            <!-- User Manual -->
+            <div class="tile tile-warning" data-tile="user-manual">
+                <div class="tile-icon">📖</div>
+                <h2>User Manual</h2>
+                <p>Detailed operational instructions and troubleshooting guide</p>
+                <button class="btn btn-warning" onclick="openResource('user-manual')">Read Manual</button>
+            </div>
+
+            <!-- TIA Portal Download -->
+            <div class="tile tile-download" data-tile="tia-portal">
+                <div class="tile-icon">⬇️</div>
+                <h2>TIA Portal Project</h2>
+                <p>Download the complete Siemens PLC software project files</p>
+                <button class="btn btn-download" onclick="downloadTiaPortal()">Download Project</button>
+            </div>
+
+            <!-- Quick Start -->
+            <div class="tile tile-secondary" data-tile="quick-start">
+                <div class="tile-icon">🚀</div>
+                <h2>Quick Start Guide</h2>
+                <p>Get up and running with the Smart Factory in minutes</p>
+                <button class="btn btn-secondary" onclick="openResource('quick-start')">Get Started</button>
+            </div>
+        </div>
+
+        <!-- Resource Modal -->
+        <div id="resourceModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div id="modalBody">
+                    <!-- Content will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Matrix Technology Solutions | Smart Factory Teachers Portal</p>
+            <p class="footer-links">
+                <a href="#" onclick="openResource('support')">Support</a> | 
+                <a href="#" onclick="openResource('contact')">Contact</a> | 
+                <a href="#" onclick="openResource('about')">About</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
