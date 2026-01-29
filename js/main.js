@@ -944,6 +944,74 @@ const resources = {
                 }
             </style>
         `
+    },
+    'im-overview': {
+        title: 'Industrial Maintenance Overview',
+        content: `
+            <h2>Industrial Maintenance Overview</h2>
+            <p>Our Industrial Maintenance Training range provides a comprehensive, hands-on approach to developing the skills required in modern industry. Designed for higher education and vocational training, this equipment enables learners to explore the maintenance of closed-loop systems, understand the fundamentals of PLC control, and gain practical experience with PLC controllers.</p>
+            <p>By combining real-world hardware, including industry standard Siemens PLC’s, with clear instructional resources, the range helps students bridge the gap between theory and practice—building confidence, competence, and career-ready expertise in industrial automation and maintenance.</p>
+            <div class="document-link">
+                <a href="https://www.matrixtsl.com/industrial-maintenance/" target="_blank" class="btn btn-info">🌐 View Industrial Maintenance Overview</a>
+            </div>
+        `
+    },
+    'im6930': {
+        title: 'IM6930 – PLC Fundamentals Trainer',
+        content: `
+            <h2>IM6930 – PLC Fundamentals Trainer</h2>
+            <p>Core PLC training for maintenance engineers with Siemens PLC hardware and structured learning resources.</p>
+            <ul>
+                <li><strong>Specification:</strong> SP6930 – PLC Fundamentals Trainer</li>
+                <li><strong>Curriculum:</strong> CP2388 – PLC Fundamentals for Maintenance Engineers</li>
+                <li><strong>Teacher Notes:</strong> CP2388 Teachers Notes</li>
+                <li><strong>User Manual:</strong> IM6930 User Manual</li>
+            </ul>
+            <div class="document-link">
+                <a href="assets/documents/IM6930/spec.pdf" target="_blank" class="btn btn-primary">📄 Specification</a>
+                <a href="assets/documents/IM6930/curriculum.pdf" target="_blank" class="btn btn-success" style="margin-left:1rem;">📚 Curriculum</a>
+                <a href="assets/documents/IM6930/teachers-notes.pdf" target="_blank" class="btn btn-info" style="margin-left:1rem;">👨‍🏫 Teacher Notes</a>
+                <a href="assets/documents/IM6930/user-manual.pdf" target="_blank" class="btn btn-warning" style="margin-left:1rem;">📖 User Manual</a>
+            </div>
+        `
+    },
+    'im0004': {
+        title: 'IM0004 – Maintenance of Closed Loop Systems',
+        content: `
+            <h2>IM0004 – Maintenance of Closed Loop Systems</h2>
+            <p>Hands-on closed loop maintenance training with structured troubleshooting and system analysis resources.</p>
+            <ul>
+                <li><strong>Specification:</strong> SP0004 – Maintenance of Closed Loop Systems</li>
+                <li><strong>Curriculum:</strong> CP0539 – Industrial Maintenance of Closed Loop Systems</li>
+                <li><strong>Teacher Notes:</strong> CP0539 & CP6773 Teachers Notes</li>
+                <li><strong>User Manual:</strong> IM0004 User Manual</li>
+            </ul>
+            <div class="document-link">
+                <a href="assets/documents/IM0004/spec.pdf" target="_blank" class="btn btn-primary">📄 Specification</a>
+                <a href="assets/documents/IM0004/curriculum.pdf" target="_blank" class="btn btn-success" style="margin-left:1rem;">📚 Curriculum</a>
+                <a href="assets/documents/IM0004/teachers-notes.pdf" target="_blank" class="btn btn-info" style="margin-left:1rem;">👨‍🏫 Teacher Notes</a>
+                <a href="assets/documents/IM0004/user-manual.pdf" target="_blank" class="btn btn-warning" style="margin-left:1rem;">📖 User Manual</a>
+            </div>
+        `
+    },
+    'im3214': {
+        title: 'IM3214 – Siemens PLC LOGO! Trainer',
+        content: `
+            <h2>IM3214 – Siemens PLC LOGO! Trainer</h2>
+            <p>LOGO! PLC training with sense & control curriculum for industrial maintenance learners.</p>
+            <ul>
+                <li><strong>Specification:</strong> SP3214 – Siemens PLC LOGO! Trainer Spec Doc</li>
+                <li><strong>Curriculum:</strong> CP6211 Sense & Control Worksheets</li>
+                <li><strong>Instructor Guide:</strong> CP6211 Instructor’s Guide</li>
+                <li><strong>User Manual:</strong> IM3214 User Manual</li>
+            </ul>
+            <div class="document-link">
+                <a href="assets/documents/IM3214/spec.pdf" target="_blank" class="btn btn-primary">📄 Specification</a>
+                <a href="assets/documents/IM3214/curriculum.pdf" target="_blank" class="btn btn-success" style="margin-left:1rem;">📚 Worksheets</a>
+                <a href="assets/documents/IM3214/teachers-guide.pdf" target="_blank" class="btn btn-info" style="margin-left:1rem;">👨‍🏫 Instructor Guide</a>
+                <a href="assets/documents/IM3214/user-manual.pdf" target="_blank" class="btn btn-warning" style="margin-left:1rem;">📖 User Manual</a>
+            </div>
+        `
     }
 };
 

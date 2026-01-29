@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Factory Teachers Portal</title>
+    <title>Industrial Maintenance Teachers Portal</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -13,7 +13,7 @@
         <div class="login-container">
             <div class="login-header">
                 <img src="assets/matrix-logo.png" alt="Matrix Technology Solutions Logo" class="login-logo">
-                <h1>Smart Factory Teachers Portal</h1>
+                <h1>Industrial Maintenance Teachers Portal</h1>
                 <p>Authorized Access Only</p>
             </div>
             
@@ -54,8 +54,8 @@
                         <img src="assets/matrix-logo.png" alt="Matrix Technology Solutions Logo">
                     </div>
                     <div class="header-text">
-                        <h1>Smart Factory Teachers Portal</h1>
-                        <p class="subtitle">Your comprehensive resource hub for Smart Factory curriculum delivery</p>
+                        <h1>Industrial Maintenance Teachers Portal</h1>
+                        <p class="subtitle">Your resource hub for industrial maintenance training and PLC education</p>
                     </div>
                     <div class="logout-container">
                         <button class="btn btn-secondary logout-btn" onclick="handleLogout()">Logout</button>
@@ -66,76 +66,36 @@
 
         <main class="container">
             <div class="dashboard-grid">
-                <!-- Specification Document -->
-                <div class="tile tile-primary" data-tile="specification" data-resource="specification">
-                    <div class="tile-icon">📋</div>
-                    <h2>Specification Document</h2>
-                    <p>Complete technical specifications and learning outcomes for the Smart Factory system</p>
-                    <button class="btn btn-primary" data-resource="specification">View Document</button>
+                <!-- Industrial Maintenance Overview -->
+                <div class="tile tile-overview" data-tile="im-overview" data-resource="im-overview">
+                    <div class="tile-icon">🏭</div>
+                    <h2>Industrial Maintenance Overview</h2>
+                    <p>Programme summary and industry 4.0 skills focus</p>
+                    <button class="btn btn-overview" data-resource="im-overview">View Overview</button>
                 </div>
 
-                <!-- Curriculum -->
-                <div class="tile tile-success" data-tile="curriculum" data-resource="curriculum">
-                    <div class="tile-icon">📚</div>
-                    <h2>Curriculum</h2>
-                    <p>Structured lesson plans, learning objectives, and assessment criteria</p>
-                    <button class="btn btn-success" data-resource="curriculum">Explore Curriculum</button>
+                <!-- IM6930 PLC Fundamentals Trainer -->
+                <div class="tile tile-primary" data-tile="im6930" data-resource="im6930">
+                    <div class="tile-icon">🧠</div>
+                    <h2>IM6930 – PLC Fundamentals Trainer</h2>
+                    <p>PLC fundamentals, Siemens training, and core maintenance skills</p>
+                    <button class="btn btn-primary" data-resource="im6930">Open Resources</button>
                 </div>
 
-                <!-- Teachers Guide -->
-                <div class="tile tile-info" data-tile="teachers-guide" data-resource="teachers-guide">
-                    <div class="tile-icon">👨‍🏫</div>
-                    <h2>Teachers Guide</h2>
-                    <p>Step-by-step teaching instructions, tips, and best practices</p>
-                    <button class="btn btn-info" data-resource="teachers-guide">Open Guide</button>
+                <!-- IM0004 Closed Loop Systems -->
+                <div class="tile tile-success" data-tile="im0004" data-resource="im0004">
+                    <div class="tile-icon">🔁</div>
+                    <h2>IM0004 – Closed Loop Systems</h2>
+                    <p>Maintenance of closed loop systems and troubleshooting</p>
+                    <button class="btn btn-success" data-resource="im0004">Open Resources</button>
                 </div>
 
-                <!-- User Manual -->
-                <div class="tile tile-warning" data-tile="user-manual" data-resource="user-manual">
-                    <div class="tile-icon">📖</div>
-                    <h2>User Manual</h2>
-                    <p>Detailed operational instructions and troubleshooting guide</p>
-                    <button class="btn btn-warning" data-resource="user-manual">Read Manual</button>
-                </div>
-
-                <!-- TIA Portal Download -->
-                <div class="tile tile-download" data-tile="tia-portal" data-download="tia-portal">
-                    <div class="tile-icon">⬇️</div>
-                    <h2>TIA Portal Project</h2>
-                    <p>Download the complete Siemens PLC software project files</p>
-                    <button class="btn btn-download" data-download="tia-portal">Download Project</button>
-                </div>
-
-                <!-- Quick Start -->
-                <div class="tile tile-secondary" data-tile="quick-start" data-resource="quick-start">
-                    <div class="tile-icon">🚀</div>
-                    <h2>Quick Start Guide</h2>
-                    <p>Get up and running with the Smart Factory in minutes</p>
-                    <button class="btn btn-secondary" data-resource="quick-start">Get Started</button>
-                </div>
-
-                <!-- Video Tutorials -->
-                <div class="tile tile-video" data-tile="videos" data-resource="videos">
-                    <div class="tile-icon">🎥</div>
-                    <h2>Video Tutorials</h2>
-                    <p>Watch comprehensive video guides and demonstrations of the Smart Factory system</p>
-                    <button class="btn btn-video" data-resource="videos">Watch Videos</button>
-                </div>
-
-                <!-- System Overview -->
-                <div class="tile tile-overview" data-tile="overview" data-resource="overview">
-                    <div class="tile-icon">📊</div>
-                    <h2>System Overview</h2>
-                    <p>Complete technical overview of Smart Factory components and capabilities</p>
-                    <button class="btn btn-overview" data-resource="overview">View Overview</button>
-                </div>
-
-                <!-- Scheme of Work -->
-                <div class="tile tile-scheme" data-tile="scheme-of-work" data-resource="scheme-of-work">
-                    <div class="tile-icon">🗂️</div>
-                    <h2>Scheme of Work</h2>
-                    <p>Structured teaching plan with weekly outcomes, activities, and assessment</p>
-                    <button class="btn btn-scheme" data-resource="scheme-of-work">View Scheme</button>
+                <!-- IM3214 Siemens LOGO Trainer -->
+                <div class="tile tile-scheme" data-tile="im3214" data-resource="im3214">
+                    <div class="tile-icon">⚡</div>
+                    <h2>IM3214 – Siemens PLC LOGO! Trainer</h2>
+                    <p>LOGO! PLC training, sense & control curriculum</p>
+                    <button class="btn btn-scheme" data-resource="im3214">Open Resources</button>
                 </div>
             </div>
 
@@ -152,7 +112,7 @@
 
         <footer>
             <div class="container">
-                <p>&copy; 2026 Matrix Technology Solutions | Smart Factory Teachers Portal</p>
+                <p>&copy; 2026 Matrix Technology Solutions | Industrial Maintenance Teachers Portal</p>
                 <p class="footer-links">
                     <a href="#" onclick="openResource('support')">Support</a> | 
                     <a href="#" onclick="openResource('contact')">Contact</a> | 
