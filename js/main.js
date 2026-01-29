@@ -80,6 +80,25 @@ const resources = {
             </ul>
         `
     },
+    'im6930-sow': {
+        title: 'IM6930 – Scheme of Work',
+        content: `
+            <h2>IM6930 Scheme of Work</h2>
+            <p><strong>A scheme of work is a structured plan that breaks a subject into sequenced lessons over a set period.</strong> It outlines what is taught, in what order, and roughly how long each part takes. It includes learning objectives, topics, key activities, resources, and assessment points.</p>
+            <h3>Suggested 8‑Week Structure (CP2388)</h3>
+            <ul>
+                <li><strong>Weeks 1–2:</strong> PLC fundamentals, I/O, control panel layout</li>
+                <li><strong>Weeks 3–4:</strong> Sensors, inputs/outputs, wiring standards</li>
+                <li><strong>Weeks 5–6:</strong> Control logic, sequencing, PLC troubleshooting</li>
+                <li><strong>Weeks 7–8:</strong> Commissioning, diagnostics, assessment project</li>
+            </ul>
+            <h3>Assessments</h3>
+            <ul>
+                <li>Formative: worksheets and practical tasks</li>
+                <li>Summative: PLC build & diagnostics assessment</li>
+            </ul>
+        `
+    },
 
     'im0004-overview': {
         title: 'IM0004 – Product Overview',
@@ -150,6 +169,25 @@ const resources = {
             </ul>
         `
     },
+    'im0004-sow': {
+        title: 'IM0004 – Scheme of Work',
+        content: `
+            <h2>IM0004 Scheme of Work</h2>
+            <p><strong>A scheme of work is a structured plan that breaks a subject into sequenced lessons over a set period.</strong> It outlines what is taught, in what order, and roughly how long each part takes. It includes learning objectives, topics, key activities, resources, and assessment points.</p>
+            <h3>Suggested 8‑Week Structure (CP0539 / CP6773)</h3>
+            <ul>
+                <li><strong>Weeks 1–2:</strong> Closed‑loop concepts, sensors, system overview</li>
+                <li><strong>Weeks 3–4:</strong> Flow control, PID behaviour, instrumentation</li>
+                <li><strong>Weeks 5–6:</strong> Fault simulation, troubleshooting, diagnostics</li>
+                <li><strong>Weeks 7–8:</strong> Commissioning, reporting, assessment</li>
+            </ul>
+            <h3>Assessments</h3>
+            <ul>
+                <li>Formative: practical tasks + reflection logs</li>
+                <li>Summative: fault‑finding assessment</li>
+            </ul>
+        `
+    },
 
     'im3214-overview': {
         title: 'IM3214 – Product Overview',
@@ -209,6 +247,24 @@ const resources = {
                 <li><a href="assets/documents/IM3214/curriculum.pdf" target="_blank">Worksheets</a></li>
                 <li><a href="assets/documents/IM3214/teachers-guide.pdf" target="_blank">Instructor Guide</a></li>
                 <li><a href="assets/documents/IM3214/user-manual.pdf" target="_blank">User Manual</a></li>
+            </ul>
+        `
+    },
+    'im3214-sow': {
+        title: 'IM3214 – Scheme of Work',
+        content: `
+            <h2>IM3214 Scheme of Work</h2>
+            <p><strong>A scheme of work is a structured plan that breaks a subject into sequenced lessons over a set period.</strong> It outlines what is taught, in what order, and roughly how long each part takes. It includes learning objectives, topics, key activities, resources, and assessment points.</p>
+            <h3>Suggested 6‑Week Structure (CP6211)</h3>
+            <ul>
+                <li><strong>Weeks 1–2:</strong> LOGO! PLC basics, I/O, wiring and safety</li>
+                <li><strong>Weeks 3–4:</strong> Logic control, timers, counters, outputs</li>
+                <li><strong>Weeks 5–6:</strong> Fault finding, optimisation, mini‑project</li>
+            </ul>
+            <h3>Assessments</h3>
+            <ul>
+                <li>Formative: worksheets + practical checks</li>
+                <li>Summative: working LOGO! control sequence</li>
             </ul>
         `
     }
