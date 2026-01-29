@@ -432,6 +432,33 @@ main {
     border-left: 4px solid var(--accent-gold);
     padding-left: 0.75rem;
 }
+
+.section-media {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.section-image {
+    max-width: 420px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-image:hover {
+    transform: scale(1.03);
+    box-shadow: var(--shadow-lg);
+}
+
+.section-logo {
+    height: 70px;
+    width: auto;
+    opacity: 0.9;
+}
 /* Tiles */
 .tile {
     background: linear-gradient(135deg,
