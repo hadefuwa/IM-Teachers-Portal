@@ -967,6 +967,7 @@ function openResource(resourceKey) {
 
 function showModal() {
     const modal = document.getElementById('resourceModal');
+    lastModalOpenTs = performance.now();
     console.log('[MODAL_SHOW]', {
         display: modal.style.display,
         visibility: modal.style.visibility,
@@ -994,6 +995,15 @@ function hideModal() {
 function closeModal() {
     hideModal();
 }
+
+// Stop clicks inside modal content from closing it
+const modalContentEl = document.querySelector('#resourceModal .modal-content');
+if (modalContentEl) {
+    modalContentEl.addEventListener('click', function(event) {
+        event.stopPropagation();
+    });
+}
+
 
 // Download TIA Portal project
 function downloadTiaPortal() {
@@ -1048,6 +1058,8 @@ function initiateDownload(event) {
     alert('Download will begin shortly. Please ensure the TIA Portal project file is uploaded to the assets/downloads/ folder.');
 }
 
+let lastModalOpenTs = 0;
+
 // Global click handler for buttons (simplified + reliable)
 document.addEventListener('click', function(event) {
     const btn = event.target.closest('button[data-resource], button[data-download]');
@@ -1064,6 +1076,9 @@ document.addEventListener('click', function(event) {
 
     if (!btn) return;
 
+    // Prevent the click from immediately closing the modal
+    event.stopPropagation();
+
     if (btn.dataset.resource) {
         console.log('[OPEN_RESOURCE]', btn.dataset.resource);
         openResource(btn.dataset.resource);
@@ -1077,6 +1092,12 @@ document.addEventListener('click', function(event) {
 window.addEventListener('click', function(event) {
     const modal = document.getElementById('resourceModal');
     if (event.target === modal) {
+        // Avoid closing immediately after opening (desktop click bubble)
+        const sinceOpen = performance.now() - lastModalOpenTs;
+        if (sinceOpen < 150) {
+            console.log('[MODAL_OVERLAY_CLICK_IGNORED]', sinceOpen);
+            return;
+        }
         console.log('[MODAL_OVERLAY_CLICK]');
         closeModal();
     }
