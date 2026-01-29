@@ -951,34 +951,41 @@ const resources = {
 function openResource(resourceKey) {
     const modal = document.getElementById('resourceModal');
     const modalBody = document.getElementById('modalBody');
-    
+
     const resource = resources[resourceKey];
-    
+
     if (resource) {
         modalBody.innerHTML = `
             <h1>${resource.title}</h1>
             ${resource.content}
         `;
-        modal.style.display = 'flex';
-        modal.style.pointerEvents = 'auto';
-        modal.style.visibility = 'visible';
-        modal.style.opacity = '1';
-        
-        // Prevent body scroll when modal is open
-        document.body.style.overflow = 'hidden';
+        showModal();
     } else {
         alert('Resource coming soon!');
     }
 }
 
-// Close modal
-function closeModal() {
+function showModal() {
+    const modal = document.getElementById('resourceModal');
+    modal.style.display = 'flex';
+    modal.style.pointerEvents = 'auto';
+    modal.style.visibility = 'visible';
+    modal.style.opacity = '1';
+    document.body.style.overflow = 'hidden';
+}
+
+function hideModal() {
     const modal = document.getElementById('resourceModal');
     modal.style.display = 'none';
     modal.style.pointerEvents = 'none';
     modal.style.visibility = 'hidden';
     modal.style.opacity = '0';
     document.body.style.overflow = 'auto';
+}
+
+// Close modal
+function closeModal() {
+    hideModal();
 }
 
 // Download TIA Portal project
@@ -1034,13 +1041,25 @@ function initiateDownload(event) {
     alert('Download will begin shortly. Please ensure the TIA Portal project file is uploaded to the assets/downloads/ folder.');
 }
 
+// Global click handler for buttons (simplified + reliable)
+document.addEventListener('click', function(event) {
+    const btn = event.target.closest('button[data-resource], button[data-download]');
+    if (!btn) return;
+
+    if (btn.dataset.resource) {
+        openResource(btn.dataset.resource);
+    } else if (btn.dataset.download) {
+        downloadTiaPortal();
+    }
+});
+
 // Close modal when clicking outside
-window.onclick = function(event) {
+window.addEventListener('click', function(event) {
     const modal = document.getElementById('resourceModal');
     if (event.target === modal) {
         closeModal();
     }
-}
+});
 
 // Keyboard shortcuts
 document.addEventListener('keydown', function(event) {
