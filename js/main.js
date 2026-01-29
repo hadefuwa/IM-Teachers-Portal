@@ -371,6 +371,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Log with style
-    console.log('%c🏭 Smart Factory Teachers Portal', 'color: #00d9ff; font-size: 20px; font-weight: bold; font-family: "JetBrains Mono", monospace;');
-    console.log('%cIndustrial Tech Design System Active', 'color: #00ff88; font-size: 12px; font-family: "JetBrains Mono", monospace;');
+    console.log('%c🏫 Smart Factory Teachers Portal', 'color: #3498db; font-size: 22px; font-weight: bold; font-family: "Sora", sans-serif;');
+    console.log('%cBusiness Education Design System Active', 'color: #d4a574; font-size: 13px; font-family: "Sora", sans-serif;');
+    console.log('%c✨ Professional • Elegant • Dynamic', 'color: #2c3e50; font-size: 11px; font-family: "Outfit", sans-serif;');
 });
