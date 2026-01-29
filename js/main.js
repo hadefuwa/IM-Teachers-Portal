@@ -83,19 +83,28 @@ const resources = {
     'im6930-sow': {
         title: 'IM6930 – Scheme of Work',
         content: `
-            <h2>IM6930 Scheme of Work</h2>
+            <h2>IM6930 Scheme of Work (CP2388)</h2>
             <p><strong>A scheme of work is a structured plan that breaks a subject into sequenced lessons over a set period.</strong> It outlines what is taught, in what order, and roughly how long each part takes. It includes learning objectives, topics, key activities, resources, and assessment points.</p>
-            <h3>Suggested 8‑Week Structure (CP2388)</h3>
-            <ul>
-                <li><strong>Weeks 1–2:</strong> PLC fundamentals, I/O, control panel layout</li>
-                <li><strong>Weeks 3–4:</strong> Sensors, inputs/outputs, wiring standards</li>
-                <li><strong>Weeks 5–6:</strong> Control logic, sequencing, PLC troubleshooting</li>
-                <li><strong>Weeks 7–8:</strong> Commissioning, diagnostics, assessment project</li>
-            </ul>
+            <h3>Suggested Delivery & Pacing (12 Weeks)</h3>
+            <p><strong>Delivery modes:</strong> Discovery (learner investigation) and Guided (teacher‑led).</p>
+            <ol>
+                <li><strong>Week 1:</strong> Introduction & Safety — Introduction, Safety Note — <em>Discovery</em> (overview, system demo, safety briefing)</li>
+                <li><strong>Week 2:</strong> Simple PLC Systems — Worksheet 1 — <em>Discovery</em> (push buttons, indicator LEDs)</li>
+                <li><strong>Week 3:</strong> Complex PLC Systems — Worksheet 2 — <em>Discovery</em> (sequencing, latching, real‑world behaviour)</li>
+                <li><strong>Week 4:</strong> HMIs — Worksheet 3 — <em>Guided</em> (HMI navigation, process control)</li>
+                <li><strong>Week 5:</strong> Emergency Stops — Worksheet 4 — <em>Discovery</em> (E‑Stop, reset logic, safety systems)</li>
+                <li><strong>Week 6:</strong> Status LED — Worksheet 5 — <em>Discovery</em> (fault/run states, system status)</li>
+                <li><strong>Week 7:</strong> NO vs NC — Worksheet 6 — <em>Discovery</em> (contact types, diagnostics)</li>
+                <li><strong>Week 8:</strong> Proximity Switch — Worksheet 7 — <em>Guided</em> (sensor setup, alignment, fault finding)</li>
+                <li><strong>Week 9:</strong> Potentiometer — Worksheet 8 — <em>Discovery</em> (analogue input, scaling, live testing)</li>
+                <li><strong>Week 10:</strong> Temperature Sensor — Worksheet 9 — <em>Discovery</em> (RTD, transmitter, sensor faults)</li>
+                <li><strong>Week 11:</strong> Digital Outputs & Motor PWM — Worksheets 10–11 — <em>Discovery</em> (output mapping, PWM speed control)</li>
+                <li><strong>Week 12:</strong> Relays & Review — Worksheet 12 + Assessment — <em>Discovery</em> (relay wiring, output switching, end‑of‑course review)</li>
+            </ol>
             <h3>Assessments</h3>
             <ul>
-                <li>Formative: worksheets and practical tasks</li>
-                <li>Summative: PLC build & diagnostics assessment</li>
+                <li>Formative: worksheet completion + practical observations</li>
+                <li>Summative: end‑of‑course review/assessment</li>
             </ul>
         `
     },
