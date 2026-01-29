@@ -415,11 +415,23 @@ main {
 /* Dashboard Grid */
 .dashboard-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
 }
 
+.section {
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary-navy);
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--accent-gold);
+    padding-left: 0.75rem;
+}
 /* Tiles */
 .tile {
     background: linear-gradient(135deg,

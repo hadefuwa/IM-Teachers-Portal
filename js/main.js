@@ -961,18 +961,6 @@ const resources = {
         content: `
             <h2>IM6930 – PLC Fundamentals Trainer</h2>
             <p>Core PLC training for maintenance engineers with Siemens PLC hardware and structured learning resources.</p>
-            <ul>
-                <li><strong>Specification:</strong> SP6930 – PLC Fundamentals Trainer</li>
-                <li><strong>Curriculum:</strong> CP2388 – PLC Fundamentals for Maintenance Engineers</li>
-                <li><strong>Teacher Notes:</strong> CP2388 Teachers Notes</li>
-                <li><strong>User Manual:</strong> IM6930 User Manual</li>
-            </ul>
-            <div class="document-link">
-                <a href="assets/documents/IM6930/spec.pdf" target="_blank" class="btn btn-primary">📄 Specification</a>
-                <a href="assets/documents/IM6930/curriculum.pdf" target="_blank" class="btn btn-success" style="margin-left:1rem;">📚 Curriculum</a>
-                <a href="assets/documents/IM6930/teachers-notes.pdf" target="_blank" class="btn btn-info" style="margin-left:1rem;">👨‍🏫 Teacher Notes</a>
-                <a href="assets/documents/IM6930/user-manual.pdf" target="_blank" class="btn btn-warning" style="margin-left:1rem;">📖 User Manual</a>
-            </div>
         `
     },
     'im0004': {
@@ -980,18 +968,6 @@ const resources = {
         content: `
             <h2>IM0004 – Maintenance of Closed Loop Systems</h2>
             <p>Hands-on closed loop maintenance training with structured troubleshooting and system analysis resources.</p>
-            <ul>
-                <li><strong>Specification:</strong> SP0004 – Maintenance of Closed Loop Systems</li>
-                <li><strong>Curriculum:</strong> CP0539 – Industrial Maintenance of Closed Loop Systems</li>
-                <li><strong>Teacher Notes:</strong> CP0539 & CP6773 Teachers Notes</li>
-                <li><strong>User Manual:</strong> IM0004 User Manual</li>
-            </ul>
-            <div class="document-link">
-                <a href="assets/documents/IM0004/spec.pdf" target="_blank" class="btn btn-primary">📄 Specification</a>
-                <a href="assets/documents/IM0004/curriculum.pdf" target="_blank" class="btn btn-success" style="margin-left:1rem;">📚 Curriculum</a>
-                <a href="assets/documents/IM0004/teachers-notes.pdf" target="_blank" class="btn btn-info" style="margin-left:1rem;">👨‍🏫 Teacher Notes</a>
-                <a href="assets/documents/IM0004/user-manual.pdf" target="_blank" class="btn btn-warning" style="margin-left:1rem;">📖 User Manual</a>
-            </div>
         `
     },
     'im3214': {
@@ -999,18 +975,147 @@ const resources = {
         content: `
             <h2>IM3214 – Siemens PLC LOGO! Trainer</h2>
             <p>LOGO! PLC training with sense & control curriculum for industrial maintenance learners.</p>
+        `
+    },
+    'im6930-overview': {
+        title: 'IM6930 – Product Overview',
+        content: `
+            <h2>IM6930 – PLC Fundamentals Trainer</h2>
+            <p>Core PLC training for maintenance engineers with Siemens PLC hardware and structured learning resources.</p>
+        `
+    },
+    'im6930-spec': {
+        title: 'IM6930 – Specification',
+        content: `
+            <h2>IM6930 Specification</h2>
+            <a href="assets/documents/IM6930/spec.pdf" target="_blank" class="btn btn-primary">📄 Open Specification (PDF)</a>
+        `
+    },
+    'im6930-curriculum': {
+        title: 'IM6930 – Curriculum',
+        content: `
+            <h2>IM6930 Curriculum</h2>
+            <a href="assets/documents/IM6930/curriculum.pdf" target="_blank" class="btn btn-success">📚 Open Curriculum (PDF)</a>
+        `
+    },
+    'im6930-teachers': {
+        title: 'IM6930 – Teacher Notes',
+        content: `
+            <h2>IM6930 Teacher Notes</h2>
+            <a href="assets/documents/IM6930/teachers-notes.pdf" target="_blank" class="btn btn-info">👨‍🏫 Open Teacher Notes (PDF)</a>
+        `
+    },
+    'im6930-manual': {
+        title: 'IM6930 – User Manual',
+        content: `
+            <h2>IM6930 User Manual</h2>
+            <a href="assets/documents/IM6930/user-manual.pdf" target="_blank" class="btn btn-warning">📖 Open User Manual (PDF)</a>
+        `
+    },
+    'im6930-resources': {
+        title: 'IM6930 – Resource Pack',
+        content: `
+            <h2>IM6930 Resources</h2>
             <ul>
-                <li><strong>Specification:</strong> SP3214 – Siemens PLC LOGO! Trainer Spec Doc</li>
-                <li><strong>Curriculum:</strong> CP6211 Sense & Control Worksheets</li>
-                <li><strong>Instructor Guide:</strong> CP6211 Instructor’s Guide</li>
-                <li><strong>User Manual:</strong> IM3214 User Manual</li>
+                <li><a href="assets/documents/IM6930/spec.pdf" target="_blank">Specification</a></li>
+                <li><a href="assets/documents/IM6930/curriculum.pdf" target="_blank">Curriculum</a></li>
+                <li><a href="assets/documents/IM6930/teachers-notes.pdf" target="_blank">Teacher Notes</a></li>
+                <li><a href="assets/documents/IM6930/user-manual.pdf" target="_blank">User Manual</a></li>
             </ul>
-            <div class="document-link">
-                <a href="assets/documents/IM3214/spec.pdf" target="_blank" class="btn btn-primary">📄 Specification</a>
-                <a href="assets/documents/IM3214/curriculum.pdf" target="_blank" class="btn btn-success" style="margin-left:1rem;">📚 Worksheets</a>
-                <a href="assets/documents/IM3214/teachers-guide.pdf" target="_blank" class="btn btn-info" style="margin-left:1rem;">👨‍🏫 Instructor Guide</a>
-                <a href="assets/documents/IM3214/user-manual.pdf" target="_blank" class="btn btn-warning" style="margin-left:1rem;">📖 User Manual</a>
-            </div>
+        `
+    },
+    'im0004-overview': {
+        title: 'IM0004 – Product Overview',
+        content: `
+            <h2>IM0004 – Maintenance of Closed Loop Systems</h2>
+            <p>Hands-on closed loop maintenance training with structured troubleshooting and system analysis resources.</p>
+        `
+    },
+    'im0004-spec': {
+        title: 'IM0004 – Specification',
+        content: `
+            <h2>IM0004 Specification</h2>
+            <a href="assets/documents/IM0004/spec.pdf" target="_blank" class="btn btn-primary">📄 Open Specification (PDF)</a>
+        `
+    },
+    'im0004-curriculum': {
+        title: 'IM0004 – Curriculum',
+        content: `
+            <h2>IM0004 Curriculum</h2>
+            <a href="assets/documents/IM0004/curriculum.pdf" target="_blank" class="btn btn-success">📚 Open Curriculum (PDF)</a>
+        `
+    },
+    'im0004-teachers': {
+        title: 'IM0004 – Teacher Notes',
+        content: `
+            <h2>IM0004 Teacher Notes</h2>
+            <a href="assets/documents/IM0004/teachers-notes.pdf" target="_blank" class="btn btn-info">👨‍🏫 Open Teacher Notes (PDF)</a>
+        `
+    },
+    'im0004-manual': {
+        title: 'IM0004 – User Manual',
+        content: `
+            <h2>IM0004 User Manual</h2>
+            <a href="assets/documents/IM0004/user-manual.pdf" target="_blank" class="btn btn-warning">📖 Open User Manual (PDF)</a>
+        `
+    },
+    'im0004-resources': {
+        title: 'IM0004 – Resource Pack',
+        content: `
+            <h2>IM0004 Resources</h2>
+            <ul>
+                <li><a href="assets/documents/IM0004/spec.pdf" target="_blank">Specification</a></li>
+                <li><a href="assets/documents/IM0004/curriculum.pdf" target="_blank">Curriculum</a></li>
+                <li><a href="assets/documents/IM0004/teachers-notes.pdf" target="_blank">Teacher Notes</a></li>
+                <li><a href="assets/documents/IM0004/user-manual.pdf" target="_blank">User Manual</a></li>
+            </ul>
+        `
+    },
+    'im3214-overview': {
+        title: 'IM3214 – Product Overview',
+        content: `
+            <h2>IM3214 – Siemens PLC LOGO! Trainer</h2>
+            <p>LOGO! PLC training with sense & control curriculum for industrial maintenance learners.</p>
+        `
+    },
+    'im3214-spec': {
+        title: 'IM3214 – Specification',
+        content: `
+            <h2>IM3214 Specification</h2>
+            <a href="assets/documents/IM3214/spec.pdf" target="_blank" class="btn btn-primary">📄 Open Specification (PDF)</a>
+        `
+    },
+    'im3214-curriculum': {
+        title: 'IM3214 – Worksheets',
+        content: `
+            <h2>IM3214 Worksheets</h2>
+            <a href="assets/documents/IM3214/curriculum.pdf" target="_blank" class="btn btn-success">📚 Open Worksheets (PDF)</a>
+        `
+    },
+    'im3214-teachers': {
+        title: 'IM3214 – Instructor Guide',
+        content: `
+            <h2>IM3214 Instructor Guide</h2>
+            <a href="assets/documents/IM3214/teachers-guide.pdf" target="_blank" class="btn btn-info">👨‍🏫 Open Instructor Guide (PDF)</a>
+        `
+    },
+    'im3214-manual': {
+        title: 'IM3214 – User Manual',
+        content: `
+            <h2>IM3214 User Manual</h2>
+            <a href="assets/documents/IM3214/user-manual.pdf" target="_blank" class="btn btn-warning">📖 Open User Manual (PDF)</a>
+        `
+    },
+    'im3214-resources': {
+        title: 'IM3214 – Resource Pack',
+        content: `
+            <h2>IM3214 Resources</h2>
+            <ul>
+                <li><a href="assets/documents/IM3214/spec.pdf" target="_blank">Specification</a></li>
+                <li><a href="assets/documents/IM3214/curriculum.pdf" target="_blank">Worksheets</a></li>
+                <li><a href="assets/documents/IM3214/teachers-guide.pdf" target="_blank">Instructor Guide</a></li>
+                <li><a href="assets/documents/IM3214/user-manual.pdf" target="_blank">User Manual</a></li>
+            </ul>
         `
     }
 };
