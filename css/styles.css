@@ -657,9 +657,9 @@ main {
 /* Modal */
 .modal {
     display: none;
-    position: fixed;
+    position: fixed !important;
     inset: 0;
-    z-index: 99999;
+    z-index: 1000000;
     background-color: rgba(26, 43, 74, 0.75);
     backdrop-filter: blur(12px);
     animation: fadeIn 0.4s ease;

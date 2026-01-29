@@ -960,6 +960,9 @@ function openResource(resourceKey) {
             ${resource.content}
         `;
         modal.style.display = 'flex';
+        modal.style.pointerEvents = 'auto';
+        modal.style.visibility = 'visible';
+        modal.style.opacity = '1';
         
         // Prevent body scroll when modal is open
         document.body.style.overflow = 'hidden';
@@ -972,6 +975,9 @@ function openResource(resourceKey) {
 function closeModal() {
     const modal = document.getElementById('resourceModal');
     modal.style.display = 'none';
+    modal.style.pointerEvents = 'none';
+    modal.style.visibility = 'hidden';
+    modal.style.opacity = '0';
     document.body.style.overflow = 'auto';
 }
 
@@ -1014,6 +1020,9 @@ function downloadTiaPortal() {
     `;
     
     modal.style.display = 'flex';
+    modal.style.pointerEvents = 'auto';
+    modal.style.visibility = 'visible';
+    modal.style.opacity = '1';
     document.body.style.overflow = 'hidden';
 }
 
