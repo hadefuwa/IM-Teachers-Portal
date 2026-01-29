@@ -708,7 +708,7 @@ function openResource(resourceKey) {
             <h1>${resource.title}</h1>
             ${resource.content}
         `;
-        modal.style.display = 'block';
+        modal.style.display = 'flex';
         
         // Prevent body scroll when modal is open
         document.body.style.overflow = 'hidden';
@@ -762,7 +762,7 @@ function downloadTiaPortal() {
         </div>
     `;
     
-    modal.style.display = 'block';
+    modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
 }
 
