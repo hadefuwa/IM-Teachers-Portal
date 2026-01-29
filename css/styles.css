@@ -722,16 +722,16 @@ main {
 
 .modal-content {
     background: linear-gradient(135deg,
-        rgba(255, 255, 255, 0.98) 0%,
-        rgba(255, 255, 255, 0.95) 100%);
-    border: 1px solid rgba(212, 165, 116, 0.3);
+        rgba(12, 18, 30, 0.98) 0%,
+        rgba(16, 24, 38, 0.98) 100%);
+    border: 1px solid rgba(79, 182, 227, 0.25);
     padding: 3rem;
     border-radius: var(--border-radius-lg);
     width: 100%;
     max-width: 1000px;
     box-shadow: 
         var(--shadow-xl),
-        0 0 60px rgba(212, 165, 116, 0.2);
+        0 0 60px rgba(79, 182, 227, 0.2);
     animation: modalSlideIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
     max-height: 85vh;
     overflow-y: auto;
@@ -751,24 +751,17 @@ main {
 }
 
 .modal-content h1 {
-    background: linear-gradient(135deg, 
-        var(--primary-navy) 0%, 
-        var(--rich-blue) 50%,
-        var(--bright-teal) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffffff;
     font-family: 'Sora', sans-serif;
     font-weight: 700;
     letter-spacing: -0.02em;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
-    border-bottom: 3px solid;
-    border-image: linear-gradient(90deg, var(--accent-gold), var(--bright-teal)) 1;
+    border-bottom: 2px solid rgba(212, 165, 116, 0.6);
 }
 
 .modal-content h2 {
-    color: var(--primary-navy);
+    color: #ffffff;
     font-family: 'Sora', sans-serif;
     font-weight: 700;
     margin-top: 2rem;
@@ -784,8 +777,12 @@ main {
 
 .modal-content p,
 .modal-content li {
-    color: var(--text-medium);
+    color: #d7deea;
     line-height: 1.8;
+}
+
+.modal-content a {
+    color: #ffffff;
 }
 
 .modal-content ul {
