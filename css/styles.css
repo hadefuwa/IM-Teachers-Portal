@@ -428,9 +428,15 @@ main {
     font-size: 1.6rem;
     font-weight: 700;
     color: var(--primary-navy);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     border-left: 4px solid var(--accent-gold);
     padding-left: 0.75rem;
+}
+
+.section-summary {
+    color: var(--text-medium);
+    margin: 0 0 1rem 0.75rem;
+    max-width: 1000px;
 }
 
 .section-media {
