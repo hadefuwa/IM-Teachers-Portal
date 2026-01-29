@@ -860,7 +860,7 @@ footer p {
 }
 
 .footer-links a {
-    color: var(--bright-teal);
+    color: #ffffff;
     text-decoration: none;
     margin: 0 1rem;
     transition: all 0.3s ease;
@@ -885,6 +885,12 @@ footer p {
 
 .footer-links a:hover::after {
     width: 100%;
+}
+
+.footer-address {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
 }
 
 /* Animations */
