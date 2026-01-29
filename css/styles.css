@@ -558,6 +558,14 @@ main {
     line-height: 1.7;
 }
 
+.tile p::after {
+    content: "More details inside.";
+    display: block;
+    margin-top: 0.4rem;
+    color: #a9b6c8;
+    font-size: 0.85rem;
+}
+
 /* Tile Colors - Business Education Palette */
 .tile-primary { 
     color: var(--bright-teal);
