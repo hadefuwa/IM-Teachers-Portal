@@ -8,109 +8,150 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo-container">
-                    <img src="assets/matrix-logo.png" alt="Matrix Technology Solutions Logo">
+    <!-- Login Screen -->
+    <div id="loginScreen" class="login-screen">
+        <div class="login-container">
+            <div class="login-header">
+                <img src="assets/matrix-logo.png" alt="Matrix Technology Solutions Logo" class="login-logo">
+                <h1>Smart Factory Teachers Portal</h1>
+                <p>Authorized Access Only</p>
+            </div>
+            
+            <form id="loginForm" class="login-form">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter username" required>
                 </div>
-                <div class="header-text">
-                    <h1>Smart Factory Teachers Portal</h1>
-                    <p class="subtitle">Your comprehensive resource hub for Smart Factory curriculum delivery</p>
+                
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required>
                 </div>
+                
+                <div id="errorMessage" class="error-message" style="display: none;"></div>
+                
+                <button type="submit" id="loginBtn" class="btn btn-primary login-btn">
+                    Sign In
+                </button>
+            </form>
+            
+            <div class="login-footer">
+                <p>Matrix Technology Solutions</p>
+                <p class="login-note">For access, please contact your administrator</p>
             </div>
         </div>
-    </header>
+    </div>
 
-    <main class="container">
-        <div class="dashboard-grid">
-            <!-- Specification Document -->
-            <div class="tile tile-primary" data-tile="specification">
-                <div class="tile-icon">📋</div>
-                <h2>Specification Document</h2>
-                <p>Complete technical specifications and learning outcomes for the Smart Factory system</p>
-                <button class="btn btn-primary" onclick="openResource('specification')">View Document</button>
-            </div>
-
-            <!-- Curriculum -->
-            <div class="tile tile-success" data-tile="curriculum">
-                <div class="tile-icon">📚</div>
-                <h2>Curriculum</h2>
-                <p>Structured lesson plans, learning objectives, and assessment criteria</p>
-                <button class="btn btn-success" onclick="openResource('curriculum')">Explore Curriculum</button>
-            </div>
-
-            <!-- Teachers Guide -->
-            <div class="tile tile-info" data-tile="teachers-guide">
-                <div class="tile-icon">👨‍🏫</div>
-                <h2>Teachers Guide</h2>
-                <p>Step-by-step teaching instructions, tips, and best practices</p>
-                <button class="btn btn-info" onclick="openResource('teachers-guide')">Open Guide</button>
-            </div>
-
-            <!-- User Manual -->
-            <div class="tile tile-warning" data-tile="user-manual">
-                <div class="tile-icon">📖</div>
-                <h2>User Manual</h2>
-                <p>Detailed operational instructions and troubleshooting guide</p>
-                <button class="btn btn-warning" onclick="openResource('user-manual')">Read Manual</button>
-            </div>
-
-            <!-- TIA Portal Download -->
-            <div class="tile tile-download" data-tile="tia-portal">
-                <div class="tile-icon">⬇️</div>
-                <h2>TIA Portal Project</h2>
-                <p>Download the complete Siemens PLC software project files</p>
-                <button class="btn btn-download" onclick="downloadTiaPortal()">Download Project</button>
-            </div>
-
-            <!-- Quick Start -->
-            <div class="tile tile-secondary" data-tile="quick-start">
-                <div class="tile-icon">🚀</div>
-                <h2>Quick Start Guide</h2>
-                <p>Get up and running with the Smart Factory in minutes</p>
-                <button class="btn btn-secondary" onclick="openResource('quick-start')">Get Started</button>
-            </div>
-
-            <!-- Video Tutorials -->
-            <div class="tile tile-video" data-tile="videos">
-                <div class="tile-icon">🎥</div>
-                <h2>Video Tutorials</h2>
-                <p>Watch comprehensive video guides and demonstrations of the Smart Factory system</p>
-                <button class="btn btn-video" onclick="openResource('videos')">Watch Videos</button>
-            </div>
-
-            <!-- System Overview -->
-            <div class="tile tile-overview" data-tile="overview">
-                <div class="tile-icon">📊</div>
-                <h2>System Overview</h2>
-                <p>Complete technical overview of Smart Factory components and capabilities</p>
-                <button class="btn btn-overview" onclick="openResource('overview')">View Overview</button>
-            </div>
-        </div>
-
-        <!-- Resource Modal -->
-        <div id="resourceModal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <div id="modalBody">
-                    <!-- Content will be loaded here -->
+    <!-- Main Portal Content -->
+    <div id="mainContent" style="display: none;">
+        <header>
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo-container">
+                        <img src="assets/matrix-logo.png" alt="Matrix Technology Solutions Logo">
+                    </div>
+                    <div class="header-text">
+                        <h1>Smart Factory Teachers Portal</h1>
+                        <p class="subtitle">Your comprehensive resource hub for Smart Factory curriculum delivery</p>
+                    </div>
+                    <div class="logout-container">
+                        <button class="btn btn-secondary logout-btn" onclick="handleLogout()">Logout</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </header>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Matrix Technology Solutions | Smart Factory Teachers Portal</p>
-            <p class="footer-links">
-                <a href="#" onclick="openResource('support')">Support</a> | 
-                <a href="#" onclick="openResource('contact')">Contact</a> | 
-                <a href="#" onclick="openResource('about')">About</a>
-            </p>
-        </div>
-    </footer>
+        <main class="container">
+            <div class="dashboard-grid">
+                <!-- Specification Document -->
+                <div class="tile tile-primary" data-tile="specification">
+                    <div class="tile-icon">📋</div>
+                    <h2>Specification Document</h2>
+                    <p>Complete technical specifications and learning outcomes for the Smart Factory system</p>
+                    <button class="btn btn-primary" onclick="openResource('specification')">View Document</button>
+                </div>
 
+                <!-- Curriculum -->
+                <div class="tile tile-success" data-tile="curriculum">
+                    <div class="tile-icon">📚</div>
+                    <h2>Curriculum</h2>
+                    <p>Structured lesson plans, learning objectives, and assessment criteria</p>
+                    <button class="btn btn-success" onclick="openResource('curriculum')">Explore Curriculum</button>
+                </div>
+
+                <!-- Teachers Guide -->
+                <div class="tile tile-info" data-tile="teachers-guide">
+                    <div class="tile-icon">👨‍🏫</div>
+                    <h2>Teachers Guide</h2>
+                    <p>Step-by-step teaching instructions, tips, and best practices</p>
+                    <button class="btn btn-info" onclick="openResource('teachers-guide')">Open Guide</button>
+                </div>
+
+                <!-- User Manual -->
+                <div class="tile tile-warning" data-tile="user-manual">
+                    <div class="tile-icon">📖</div>
+                    <h2>User Manual</h2>
+                    <p>Detailed operational instructions and troubleshooting guide</p>
+                    <button class="btn btn-warning" onclick="openResource('user-manual')">Read Manual</button>
+                </div>
+
+                <!-- TIA Portal Download -->
+                <div class="tile tile-download" data-tile="tia-portal">
+                    <div class="tile-icon">⬇️</div>
+                    <h2>TIA Portal Project</h2>
+                    <p>Download the complete Siemens PLC software project files</p>
+                    <button class="btn btn-download" onclick="downloadTiaPortal()">Download Project</button>
+                </div>
+
+                <!-- Quick Start -->
+                <div class="tile tile-secondary" data-tile="quick-start">
+                    <div class="tile-icon">🚀</div>
+                    <h2>Quick Start Guide</h2>
+                    <p>Get up and running with the Smart Factory in minutes</p>
+                    <button class="btn btn-secondary" onclick="openResource('quick-start')">Get Started</button>
+                </div>
+
+                <!-- Video Tutorials -->
+                <div class="tile tile-video" data-tile="videos">
+                    <div class="tile-icon">🎥</div>
+                    <h2>Video Tutorials</h2>
+                    <p>Watch comprehensive video guides and demonstrations of the Smart Factory system</p>
+                    <button class="btn btn-video" onclick="openResource('videos')">Watch Videos</button>
+                </div>
+
+                <!-- System Overview -->
+                <div class="tile tile-overview" data-tile="overview">
+                    <div class="tile-icon">📊</div>
+                    <h2>System Overview</h2>
+                    <p>Complete technical overview of Smart Factory components and capabilities</p>
+                    <button class="btn btn-overview" onclick="openResource('overview')">View Overview</button>
+                </div>
+            </div>
+
+            <!-- Resource Modal -->
+            <div id="resourceModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <div id="modalBody">
+                        <!-- Content will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2026 Matrix Technology Solutions | Smart Factory Teachers Portal</p>
+                <p class="footer-links">
+                    <a href="#" onclick="openResource('support')">Support</a> | 
+                    <a href="#" onclick="openResource('contact')">Contact</a> | 
+                    <a href="#" onclick="openResource('about')">About</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/auth.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

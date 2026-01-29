@@ -136,7 +136,7 @@ const resources = {
                 }
                 .product-item p {
                     color: var(--text-medium);
-                    font-family: 'JetBrains Mono', monospace;
+                    font-family: 'Outfit', sans-serif;
                     font-size: 0.9rem;
                 }
             </style>
@@ -804,8 +804,8 @@ const observer = new IntersectionObserver(function(entries) {
     });
 }, observerOptions);
 
-// Initialize on page load
-document.addEventListener('DOMContentLoaded', function() {
+// Initialize tile animations (called after login)
+function initializeTileAnimations() {
     // Staggered tile reveal animation
     document.querySelectorAll('.tile').forEach((tile, index) => {
         tile.style.opacity = '0';
@@ -825,4 +825,4 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('%c🏫 Smart Factory Teachers Portal', 'color: #3498db; font-size: 22px; font-weight: bold; font-family: "Sora", sans-serif;');
     console.log('%cBusiness Education Design System Active', 'color: #d4a574; font-size: 13px; font-family: "Sora", sans-serif;');
     console.log('%c✨ Professional • Elegant • Dynamic', 'color: #2c3e50; font-size: 11px; font-family: "Outfit", sans-serif;');
-});
+}
