@@ -242,6 +242,186 @@ const resources = {
                 <li>Ongoing support and updates</li>
             </ul>
         `
+    },
+    'videos': {
+        title: 'Video Tutorials & Demonstrations',
+        content: `
+            <h2>Smart Factory Video Library</h2>
+            
+            <p>Explore our comprehensive collection of video tutorials, demonstrations, and guides for the Smart Factory system.</p>
+            
+            <h3>📹 Getting Started Series</h3>
+            <div class="video-section">
+                <div class="video-placeholder">
+                    <p><strong>Introduction to Smart Factory</strong></p>
+                    <p>Overview of the system components and capabilities</p>
+                    <a href="https://www.matrixtsl.com/webshop/smart-factory/" target="_blank" class="btn btn-video">
+                        🎬 Watch on Matrix TSL
+                    </a>
+                </div>
+            </div>
+            
+            <h3>🔧 Setup & Configuration</h3>
+            <div class="video-section">
+                <div class="video-placeholder">
+                    <p><strong>Hardware Setup Guide</strong></p>
+                    <p>Step-by-step hardware assembly and connection</p>
+                </div>
+                <div class="video-placeholder">
+                    <p><strong>TIA Portal Configuration</strong></p>
+                    <p>Configuring your PLC and HMI system</p>
+                </div>
+            </div>
+            
+            <h3>💡 Programming Tutorials</h3>
+            <div class="video-section">
+                <div class="video-placeholder">
+                    <p><strong>Ladder Logic Basics</strong></p>
+                    <p>Introduction to PLC programming</p>
+                </div>
+                <div class="video-placeholder">
+                    <p><strong>Conveyor System Control</strong></p>
+                    <p>Programming the conveyor belt system</p>
+                </div>
+                <div class="video-placeholder">
+                    <p><strong>Pick & Place Operations</strong></p>
+                    <p>Programming the pneumatic and stepper systems</p>
+                </div>
+            </div>
+            
+            <h3>🎓 Lesson Examples</h3>
+            <div class="video-section">
+                <div class="video-placeholder">
+                    <p><strong>Sample Lesson Delivery</strong></p>
+                    <p>Watch experienced teachers demonstrate lesson delivery</p>
+                </div>
+            </div>
+            
+            <div class="document-link">
+                <a href="https://www.matrixtsl.com/webshop/smart-factory/" target="_blank" class="btn btn-primary">
+                    🌐 Visit Matrix TSL for More Resources
+                </a>
+            </div>
+            
+            <style>
+                .video-section {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                    gap: 1.5rem;
+                    margin: 1.5rem 0 2rem 0;
+                }
+                .video-placeholder {
+                    background: linear-gradient(135deg, 
+                        rgba(52, 152, 219, 0.05) 0%, 
+                        rgba(212, 165, 116, 0.05) 100%);
+                    border: 2px dashed rgba(52, 152, 219, 0.3);
+                    border-radius: 12px;
+                    padding: 1.5rem;
+                    text-align: center;
+                    transition: all 0.3s ease;
+                }
+                .video-placeholder:hover {
+                    border-color: rgba(52, 152, 219, 0.6);
+                    background: linear-gradient(135deg, 
+                        rgba(52, 152, 219, 0.1) 0%, 
+                        rgba(212, 165, 116, 0.1) 100%);
+                    transform: translateY(-4px);
+                }
+                .video-placeholder p {
+                    margin-bottom: 0.5rem;
+                }
+                .video-placeholder strong {
+                    color: var(--primary-navy);
+                    font-size: 1.05rem;
+                }
+                .video-placeholder .btn {
+                    margin-top: 1rem;
+                    padding: 0.75rem 1.5rem;
+                    font-size: 0.9rem;
+                }
+            </style>
+        `
+    },
+    'overview': {
+        title: 'Smart Factory System Overview',
+        content: `
+            <h2>Smart Factory Technical Overview</h2>
+            
+            <div class="overview-images">
+                <img src="assets/images/smart-factory-render1.png" alt="Smart Factory Render 1" class="overview-img">
+                <img src="assets/images/smart-factory-render2.png" alt="Smart Factory Render 2" class="overview-img">
+            </div>
+            
+            <p>The Smart Factory is a comprehensive Industry 4.0 educational platform that provides 
+            hands-on experience with modern manufacturing automation systems.</p>
+            
+            <style>
+                .overview-images {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 1.5rem;
+                    margin: 2rem 0;
+                }
+                .overview-img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 12px;
+                    box-shadow: 0 4px 16px rgba(26, 43, 74, 0.15);
+                    transition: all 0.3s ease;
+                }
+                .overview-img:hover {
+                    transform: scale(1.05);
+                    box-shadow: 0 8px 24px rgba(52, 152, 219, 0.3);
+                }
+            </style>
+            
+            <h3>🏭 System Description</h3>
+            <p>Students gain understanding of conveyor systems, sensing systems, pneumatic pick and place 
+            technology, DC motor drives, and stepper motor drives. The factory includes a number of coloured 
+            discs made from plastic and other materials. A conveyor belt moves these pieces into the factory, 
+            where user programmed sensors sort the discs into multiple rejection bins. Some are picked off 
+            the conveyor by a suction device and a stepper motor-controlled gantry sorts the discs into 
+            appropriately coloured containers.</p>
+            
+            <h3>📦 Key Components</h3>
+            <ul>
+                <li><strong>Conveyor System:</strong> Variable speed belt transport system</li>
+                <li><strong>Sensing Systems:</strong> Color detection, position sensors</li>
+                <li><strong>Pneumatic Pick & Place:</strong> Vacuum suction technology</li>
+                <li><strong>Stepper Motor Gantry:</strong> Precise positioning control</li>
+                <li><strong>DC Motor Drives:</strong> Conveyor belt control</li>
+                <li><strong>Sorting System:</strong> Multiple rejection bins with programmable logic</li>
+            </ul>
+            
+            <h3>🎯 Learning Objectives</h3>
+            <ul>
+                <li>Factory control and automation systems</li>
+                <li>Software design for automation</li>
+                <li>DC motor and stepper drives</li>
+                <li>Conveyor and gantry systems</li>
+                <li>Vacuum pick and place systems</li>
+                <li>Component sensing and sorting</li>
+                <li>System design with more than one controller</li>
+            </ul>
+            
+            <h3>💻 Smart Software Integration</h3>
+            <p>The Smart Factory can be used with our <strong>Siemens S7 PLC with HMI and 4mm Connectors</strong>. 
+            As a Siemens education partner, we can also provide you with software to control these upon request.</p>
+            
+            <h3>🤝 Industry 4.0 Compatibility</h3>
+            <p>The Smart Factory is compatible with the <strong>AllCode robot arm production cell</strong>, 
+            which can be added to provide a powerful and interesting Industry 4.0 solution.</p>
+            
+            <h3>📏 Compact Design</h3>
+            <p>The smart factory is <strong>completely self-contained</strong> and can be stored away in 
+            one of our standard trays, making it perfect for educational environments with limited space.</p>
+            
+            <div class="document-link">
+                <a href="https://www.matrixtsl.com/webshop/smart-factory/" target="_blank" class="btn btn-info">
+                    🌐 View Full Product Details on Matrix TSL
+                </a>
+            </div>
+        `
     }
 };
 

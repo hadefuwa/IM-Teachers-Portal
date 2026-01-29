@@ -375,6 +375,14 @@ main {
     color: var(--warning-amber);
     border-top-color: var(--warning-amber);
 }
+.tile-video { 
+    color: #e74c3c;
+    border-top-color: #e74c3c;
+}
+.tile-overview { 
+    color: #9b59b6;
+    border-top-color: #9b59b6;
+}
 
 /* Buttons */
 .btn {
@@ -467,6 +475,16 @@ main {
 
 .btn-secondary { 
     background: linear-gradient(135deg, var(--warning-amber) 0%, #e67e22 100%);
+    color: white;
+}
+
+.btn-video { 
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    color: white;
+}
+
+.btn-overview { 
+    background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
     color: white;
 }
 
