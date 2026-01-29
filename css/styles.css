@@ -540,6 +540,10 @@ main {
     color: #9b59b6;
     border-top-color: #9b59b6;
 }
+.tile-scheme { 
+    color: #16a085;
+    border-top-color: #16a085;
+}
 
 /* Buttons */
 .btn {
@@ -642,6 +646,11 @@ main {
 
 .btn-overview { 
     background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+    color: white;
+}
+
+.btn-scheme { 
+    background: linear-gradient(135deg, #16a085 0%, #138d75 100%);
     color: white;
 }
 

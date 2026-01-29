@@ -830,6 +830,120 @@ const resources = {
                 }
             </style>
         `
+    },
+    'scheme-of-work': {
+        title: 'Scheme of Work (Suggested)',
+        content: `
+            <h2>Scheme of Work – Smart Factory & Industry 4.0</h2>
+            <p>This scheme of work is a structured teaching plan that aligns the Smart Factory curriculum to weekly outcomes, activities, and assessment. Adapt timing to your cohort and timetable.</p>
+
+            <h3>🧭 Course Structure (12 Weeks)</h3>
+            <div class="sow-grid">
+                <div class="sow-week">
+                    <h4>Weeks 1–2: Foundations</h4>
+                    <ul>
+                        <li>Industry 4.0 overview, smart systems, safety</li>
+                        <li>Sensor types (optical, proximity, colour)</li>
+                        <li>Worksheet 1–3</li>
+                    </ul>
+                    <p><strong>Assessment:</strong> short quiz + worksheet completion</p>
+                </div>
+                <div class="sow-week">
+                    <h4>Weeks 3–4: Conveyors & Sorting</h4>
+                    <ul>
+                        <li>Conveyor control (DC motors, PWM)</li>
+                        <li>Reject mechanisms & sorting counters</li>
+                        <li>Worksheet 4–6</li>
+                    </ul>
+                    <p><strong>Assessment:</strong> practical task + observation checklist</p>
+                </div>
+                <div class="sow-week">
+                    <h4>Weeks 5–6: Stepper & Gantry</h4>
+                    <ul>
+                        <li>Stepper motor control</li>
+                        <li>Gantry positioning and plunger logic</li>
+                        <li>Worksheet 5–7</li>
+                    </ul>
+                    <p><strong>Assessment:</strong> programming task + peer review</p>
+                </div>
+                <div class="sow-week">
+                    <h4>Weeks 7–8: Robot Arm Integration</h4>
+                    <ul>
+                        <li>Robot arm operations and sequencing</li>
+                        <li>Cell commissioning</li>
+                        <li>Worksheet 8–10</li>
+                    </ul>
+                    <p><strong>Assessment:</strong> robot pick & place demonstration</p>
+                </div>
+                <div class="sow-week">
+                    <h4>Weeks 9–10: Advanced Systems</h4>
+                    <ul>
+                        <li>Defects & reset sequences</li>
+                        <li>Vision systems, RFID</li>
+                        <li>Worksheet 11–13</li>
+                    </ul>
+                    <p><strong>Assessment:</strong> fault diagnosis task</p>
+                </div>
+                <div class="sow-week">
+                    <h4>Weeks 11–12: Industry 4.0 Data</h4>
+                    <ul>
+                        <li>Networks & communications</li>
+                        <li>Data logging, analytics, IO-Link</li>
+                        <li>Predictive maintenance</li>
+                        <li>Worksheet 14–18</li>
+                    </ul>
+                    <p><strong>Assessment:</strong> mini project + reflection</p>
+                </div>
+            </div>
+
+            <h3>🧑‍🏫 Teaching Guidance</h3>
+            <ul>
+                <li><strong>Start practical:</strong> demonstrate each module live before independent work.</li>
+                <li><strong>Small teams:</strong> assign conveyor, gantry, and robot roles.</li>
+                <li><strong>Checkpoints:</strong> use quick exit tickets every lesson.</li>
+                <li><strong>Safety first:</strong> emphasise pneumatics, moving parts, and emergency stop.</li>
+                <li><strong>Reflection:</strong> include a short logbook entry per session.</li>
+            </ul>
+
+            <h3>📋 Assessment Plan</h3>
+            <ul>
+                <li>Formative: worksheets, observations, quizzes</li>
+                <li>Summative: final integrated system demo + report</li>
+                <li>Stretch: optimisation challenge (speed vs accuracy)</li>
+            </ul>
+
+            <h3>🧰 Resources Needed</h3>
+            <ul>
+                <li>Smart Factory system + PLC/HMI</li>
+                <li>Curriculum worksheets (CP4902)</li>
+                <li>Teacher guide (CP7329T)</li>
+                <li>User manual (CP5279)</li>
+            </ul>
+
+            <div class="document-link">
+                <a href="assets/documents/curriculum.pdf" target="_blank" class="btn btn-success">📚 Curriculum (PDF)</a>
+                <a href="assets/documents/teachers-guide.pdf" target="_blank" class="btn btn-info" style="margin-left: 1rem;">👨‍🏫 Teacher Guide (PDF)</a>
+            </div>
+
+            <style>
+                .sow-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                    gap: 1.5rem;
+                    margin: 1.5rem 0 2rem 0;
+                }
+                .sow-week {
+                    background: linear-gradient(135deg, rgba(22, 160, 133, 0.08), rgba(52, 152, 219, 0.06));
+                    border: 1px solid rgba(22, 160, 133, 0.25);
+                    border-radius: 12px;
+                    padding: 1.25rem;
+                }
+                .sow-week h4 {
+                    color: var(--primary-navy);
+                    margin-bottom: 0.5rem;
+                }
+            </style>
+        `
     }
 };
 
