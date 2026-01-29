@@ -87,25 +87,96 @@ const resources = {
             <p><strong>A scheme of work is a structured plan that breaks a subject into sequenced lessons over a set period.</strong> It outlines what is taught, in what order, and roughly how long each part takes. It includes learning objectives, topics, key activities, resources, and assessment points.</p>
             <h3>Suggested Delivery & Pacing (12 Weeks)</h3>
             <p><strong>Delivery modes:</strong> Discovery (learner investigation) and Guided (teacher‑led).</p>
-            <ol>
-                <li><strong>Week 1:</strong> Introduction & Safety — Introduction, Safety Note — <em>Discovery</em> (overview, system demo, safety briefing)</li>
-                <li><strong>Week 2:</strong> Simple PLC Systems — Worksheet 1 — <em>Discovery</em> (push buttons, indicator LEDs)</li>
-                <li><strong>Week 3:</strong> Complex PLC Systems — Worksheet 2 — <em>Discovery</em> (sequencing, latching, real‑world behaviour)</li>
-                <li><strong>Week 4:</strong> HMIs — Worksheet 3 — <em>Guided</em> (HMI navigation, process control)</li>
-                <li><strong>Week 5:</strong> Emergency Stops — Worksheet 4 — <em>Discovery</em> (E‑Stop, reset logic, safety systems)</li>
-                <li><strong>Week 6:</strong> Status LED — Worksheet 5 — <em>Discovery</em> (fault/run states, system status)</li>
-                <li><strong>Week 7:</strong> NO vs NC — Worksheet 6 — <em>Discovery</em> (contact types, diagnostics)</li>
-                <li><strong>Week 8:</strong> Proximity Switch — Worksheet 7 — <em>Guided</em> (sensor setup, alignment, fault finding)</li>
-                <li><strong>Week 9:</strong> Potentiometer — Worksheet 8 — <em>Discovery</em> (analogue input, scaling, live testing)</li>
-                <li><strong>Week 10:</strong> Temperature Sensor — Worksheet 9 — <em>Discovery</em> (RTD, transmitter, sensor faults)</li>
-                <li><strong>Week 11:</strong> Digital Outputs & Motor PWM — Worksheets 10–11 — <em>Discovery</em> (output mapping, PWM speed control)</li>
-                <li><strong>Week 12:</strong> Relays & Review — Worksheet 12 + Assessment — <em>Discovery</em> (relay wiring, output switching, end‑of‑course review)</li>
-            </ol>
-            <h3>Assessments</h3>
-            <ul>
-                <li>Formative: worksheet completion + practical observations</li>
-                <li>Summative: end‑of‑course review/assessment</li>
-            </ul>
+            <div class="sow-table">
+                <div class="sow-row">
+                    <div><strong>Week 1</strong></div>
+                    <div>Introduction & Safety</div>
+                    <div>Explain system overview, safe working, emergency procedures</div>
+                    <div>Discovery + demo</div>
+                    <div>Safety quiz + participation</div>
+                </div>
+                <div class="sow-row">
+                    <div><strong>Week 2</strong></div>
+                    <div>Simple PLC Systems (WS1)</div>
+                    <div>Use push buttons & LEDs to understand I/O logic</div>
+                    <div>Discovery task</div>
+                    <div>Worksheet completion</div>
+                </div>
+                <div class="sow-row">
+                    <div><strong>Week 3</strong></div>
+                    <div>Complex PLC Systems (WS2)</div>
+                    <div>Sequencing, latching, real‑world system behaviour</div>
+                    <div>Discovery task</div>
+                    <div>Observation checklist</div>
+                </div>
+                <div class="sow-row">
+                    <div><strong>Week 4</strong></div>
+                    <div>HMIs (WS3)</div>
+                    <div>Navigate HMI, interpret process screens</div>
+                    <div>Guided demo + practice</div>
+                    <div>Short Q&A</div>
+                </div>
+                <div class="sow-row">
+                    <div><strong>Week 5</strong></div>
+                    <div>Emergency Stops (WS4)</div>
+                    <div>Understand E‑Stop logic and reset procedures</div>
+                    <div>Discovery + scenario</div>
+                    <div>Worksheet + scenario notes</div>
+                </div>
+                <div class="sow-row">
+                    <div><strong>Week 6</strong></div>
+                    <div>Status LED (WS5)</div>
+                    <div>Interpret fault/run states and indicators</div>
+                    <div>Discovery</div>
+                    <div>Worksheet + oral check</div>
+                </div>
+                <div class="sow-row">
+                    <div><strong>Week 7</strong></div>
+                    <div>NO vs NC (WS6)</div>
+                    <div>Identify contact types and diagnostic thinking</div>
+                    <div>Discovery</div>
+                    <div>Worksheet review</div>
+                </div>
+                <div class="sow-row">
+                    <div><strong>Week 8</strong></div>
+                    <div>Proximity Switch (WS7)</div>
+                    <div>Sensor setup, alignment, fault‑finding</div>
+                    <div>Guided practical</div>
+                    <div>Practical observation</div>
+                </div>
+                <div class="sow-row">
+                    <div><strong>Week 9</strong></div>
+                    <div>Potentiometer (WS8)</div>
+                    <div>Analogue input scaling & live testing</div>
+                    <div>Discovery</div>
+                    <div>Worksheet completion</div>
+                </div>
+                <div class="sow-row">
+                    <div><strong>Week 10</strong></div>
+                    <div>Temperature Sensor (WS9)</div>
+                    <div>RTD, transmitter scaling, sensor faults</div>
+                    <div>Discovery</div>
+                    <div>Worksheet + mini‑quiz</div>
+                </div>
+                <div class="sow-row">
+                    <div><strong>Week 11</strong></div>
+                    <div>Digital Outputs & PWM (WS10–11)</div>
+                    <div>Output mapping, PWM speed control</div>
+                    <div>Discovery</div>
+                    <div>Practical task</div>
+                </div>
+                <div class="sow-row">
+                    <div><strong>Week 12</strong></div>
+                    <div>Relays & Review (WS12)</div>
+                    <div>Relay wiring, output switching, course review</div>
+                    <div>Discovery + review</div>
+                    <div>Summative assessment</div>
+                </div>
+            </div>
+            <style>
+                .sow-table { display:grid; gap:0.6rem; }
+                .sow-row { display:grid; grid-template-columns: 0.7fr 1.2fr 1.6fr 0.9fr 1fr; gap:0.6rem; background:rgba(79,182,227,0.08); border:1px solid rgba(79,182,227,0.25); padding:0.6rem; border-radius:8px; font-size:0.9rem; }
+            </style>
         `
     },
 
@@ -184,24 +255,18 @@ const resources = {
             <h2>IM0004 Scheme of Work (from Teacher Notes)</h2>
             <p><strong>A scheme of work is a structured plan that breaks a subject into sequenced lessons over a set period.</strong> It outlines what is taught, in what order, and roughly how long each part takes. It includes learning objectives, topics, key activities, resources, and assessment points.</p>
             <h3>Suggested Delivery & Pacing (10 Weeks)</h3>
-            <p>From IM0004 Teacher Notes: learners begin with guided exploration then move into discovery, fault‑finding, and scenario‑based diagnostics.</p>
-            <ol>
-                <li><strong>Week 1:</strong> Intro + Worksheets 1–2 — Closed‑loop flow, E‑Stop — <em>Guided</em></li>
-                <li><strong>Week 2:</strong> Worksheets 3–5 — Status LEDs, PLC I/O, HMI — <em>Discovery</em></li>
-                <li><strong>Week 3:</strong> Worksheets 6–7 — Pump & valve behaviour — <em>Guided → fault‑led</em></li>
-                <li><strong>Week 4:</strong> Worksheets 8–9 — Float & proximity sensors — <em>Fault‑led</em></li>
-                <li><strong>Week 5:</strong> Worksheets 10–11 — Flow & temperature sensors — <em>Discovery</em></li>
-                <li><strong>Week 6:</strong> Worksheets 12–13 — Digital vs analogue sensors — <em>Guided</em></li>
-                <li><strong>Week 7:</strong> Random Faults — Fault‑finding via IO screen — <em>Fault‑led</em></li>
-                <li><strong>Week 8:</strong> Scenarios 1–4 — Realistic simulation — <em>Scenario‑based</em></li>
-                <li><strong>Week 9:</strong> Scenarios 5–8 — Realistic simulation — <em>Scenario‑based</em></li>
-                <li><strong>Week 10:</strong> Review & Assessments — Practical + written — <em>Mixed</em></li>
-            </ol>
-            <h3>Assessments</h3>
-            <ul>
-                <li>Formative: worksheets + observation</li>
-                <li>Summative: practical & written review</li>
-            </ul>
+            <div class="sow-table">
+                <div class="sow-row"><div><strong>Week 1</strong></div><div>Intro + WS1–2</div><div>Closed‑loop flow, E‑Stop</div><div>Guided</div><div>Worksheet check</div></div>
+                <div class="sow-row"><div><strong>Week 2</strong></div><div>WS3–5</div><div>Status LEDs, PLC I/O, HMI</div><div>Discovery</div><div>Observation</div></div>
+                <div class="sow-row"><div><strong>Week 3</strong></div><div>WS6–7</div><div>Pump & valve behaviour</div><div>Guided → fault‑led</div><div>Practical notes</div></div>
+                <div class="sow-row"><div><strong>Week 4</strong></div><div>WS8–9</div><div>Float & proximity sensors</div><div>Fault‑led</div><div>Worksheet</div></div>
+                <div class="sow-row"><div><strong>Week 5</strong></div><div>WS10–11</div><div>Flow & temperature sensors</div><div>Discovery</div><div>Mini‑quiz</div></div>
+                <div class="sow-row"><div><strong>Week 6</strong></div><div>WS12–13</div><div>Digital vs analogue sensors</div><div>Guided</div><div>Worksheet review</div></div>
+                <div class="sow-row"><div><strong>Week 7</strong></div><div>Random Faults</div><div>Fault‑finding via I/O screen</div><div>Fault‑led</div><div>Observation</div></div>
+                <div class="sow-row"><div><strong>Week 8</strong></div><div>Scenarios 1–4</div><div>Realistic simulation</div><div>Scenario‑based</div><div>Performance notes</div></div>
+                <div class="sow-row"><div><strong>Week 9</strong></div><div>Scenarios 5–8</div><div>Realistic simulation</div><div>Scenario‑based</div><div>Performance notes</div></div>
+                <div class="sow-row"><div><strong>Week 10</strong></div><div>Review & Assessment</div><div>Practical + written assessment</div><div>Mixed</div><div>Summative</div></div>
+            </div>
         `
     },
 
@@ -273,15 +338,15 @@ const resources = {
             <p><strong>A scheme of work is a structured plan that breaks a subject into sequenced lessons over a set period.</strong> It outlines what is taught, in what order, and roughly how long each part takes. It includes learning objectives, topics, key activities, resources, and assessment points.</p>
             <h3>Worksheet‑Based Pacing (CP6211)</h3>
             <p>Each worksheet is designed for approximately <strong>40–60 minutes</strong> delivery time.</p>
-            <ol>
-                <li><strong>Worksheet 1:</strong> Basic Outputs — switching motor/transistor outputs</li>
-                <li><strong>Worksheet 2:</strong> Sequenced Outputs — finite‑state machine, traffic light control</li>
-                <li><strong>Worksheet 3:</strong> PWM Outputs — timers, PWM, analogue voltage via capacitor, FETs</li>
-                <li><strong>Worksheet 4:</strong> Basic Inputs — polling switches, variables, input states</li>
-                <li><strong>Worksheet 5:</strong> Pedestrian Crossing — combined inputs/outputs, state machines</li>
-                <li><strong>Worksheet 6:</strong> Potentiometers — analogue controls, go/no‑go thresholds</li>
-                <li><strong>Worksheet 7:</strong> Using Sensors — thermistor characteristics & data conversion</li>
-            </ol>
+            <div class="sow-table">
+                <div class="sow-row"><div><strong>Lesson 1</strong></div><div>Basic Outputs</div><div>Switch motor/transistor outputs</div><div>Guided + practice</div><div>Worksheet check</div></div>
+                <div class="sow-row"><div><strong>Lesson 2</strong></div><div>Sequenced Outputs</div><div>FSM & traffic light control</div><div>Guided + practical</div><div>Observation</div></div>
+                <div class="sow-row"><div><strong>Lesson 3</strong></div><div>PWM Outputs</div><div>Timers, PWM, analogue voltage, FETs</div><div>Discovery</div><div>Mini‑quiz</div></div>
+                <div class="sow-row"><div><strong>Lesson 4</strong></div><div>Basic Inputs</div><div>Polling switches, variables, input states</div><div>Guided</div><div>Worksheet check</div></div>
+                <div class="sow-row"><div><strong>Lesson 5</strong></div><div>Pedestrian Crossing</div><div>Inputs/outputs, state machines</div><div>Discovery + build</div><div>Practical demo</div></div>
+                <div class="sow-row"><div><strong>Lesson 6</strong></div><div>Potentiometers</div><div>Analogue controls, thresholds</div><div>Discovery</div><div>Worksheet check</div></div>
+                <div class="sow-row"><div><strong>Lesson 7</strong></div><div>Using Sensors</div><div>Thermistors & data conversion</div><div>Guided + investigation</div><div>Practical demo</div></div>
+            </div>
             <h3>Assessments</h3>
             <ul>
                 <li>Formative: worksheet completion & practical demonstrations</li>
@@ -299,9 +364,10 @@ function openResource(resourceKey) {
     const resource = resources[resourceKey];
 
     if (resource) {
+        const note = resourceKey.endsWith('-sow') ? '' : '<p class="modal-note">Quick summary below. Download the PDF for full detail.</p>';
         modalBody.innerHTML = `
             <h1>${resource.title}</h1>
-            <p class="modal-note">Quick summary below. Download the PDF for full detail.</p>
+            ${note}
             ${resource.content}
         `;
         showModal();
