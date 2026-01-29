@@ -224,6 +224,7 @@ function openResource(resourceKey) {
     if (resource) {
         modalBody.innerHTML = `
             <h1>${resource.title}</h1>
+            <p class="modal-note">Quick summary below. Download the PDF for full detail.</p>
             ${resource.content}
         `;
         showModal();

@@ -558,14 +558,6 @@ main {
     line-height: 1.7;
 }
 
-.tile p::after {
-    content: "More details inside.";
-    display: block;
-    margin-top: 0.4rem;
-    color: #a9b6c8;
-    font-size: 0.85rem;
-}
-
 /* Tile Colors - Business Education Palette */
 .tile-primary { 
     color: var(--bright-teal);
@@ -791,6 +783,12 @@ main {
 
 .modal-content a {
     color: #ffffff;
+}
+
+.modal-note {
+    color: #a9b6c8;
+    font-size: 0.9rem;
+    margin: -1rem 0 1.5rem 0;
 }
 
 .modal-content ul {
